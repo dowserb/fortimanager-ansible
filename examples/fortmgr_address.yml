@@ -7,10 +7,10 @@
     - name: CREATE PROVIDER
       set_fact:
         fortimanager_provider:
-          host: "{{ ansible_host }}"
-          username: "{{ ansible_user }}"
-          password: "{{ ansible_password }}"
-          adom: "lab"
+          host: "dil_uat_fortimanager"
+          username: "ansibleapiadmin"
+          password: "XXXX"
+          adom: "uat"
 
     - name: ENSURE ADDRESS SUBNETS EXIST
       fortimgr_address:
