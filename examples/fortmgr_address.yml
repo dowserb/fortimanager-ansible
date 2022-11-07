@@ -1,6 +1,6 @@
 ---
 - name: ENSURE ADDRESS OBJECTS ARE IN DESIRED STATE
-  hosts: fortimanager
+  hosts: "dil_uat_fortimanager"
   connection: local
   gather_facts: false
   tasks:
@@ -9,7 +9,7 @@
         fortimanager_provider:
           host: "dil_uat_fortimanager"
           username: "ansibleapiadmin"
-          password: "XXXX"
+          password: "{{ password }}"
           adom: "uat"
 
     - name: ENSURE ADDRESS SUBNETS EXIST
