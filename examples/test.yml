@@ -13,7 +13,7 @@
    - name: Configure IPv4 policies.
      fmgr_pkg_firewall_policy:
         bypass_validation: False
-        adom: ansible
+        adom: uat
         pkg: ansible # package name
         state: present
         pkg_firewall_policy:
