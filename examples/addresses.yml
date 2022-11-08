@@ -1,4 +1,7 @@
----
+
+
+
+ ---
 - name: ENSURE ADDRESS OBJECTS ARE IN DESIRED STATE
   host: fortimanager
   connection: local
