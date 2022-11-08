@@ -20,7 +20,7 @@
         address_type: "ipmask"
         subnet: "{{ item.subnet }}"
         associated_intfc: "{{ item.interface }}"
-        comment: "Lab Server"
+        comment: "UAT Server"
       with_items: "{{ addresses.subnets }}"
       tags: subnet
 #
