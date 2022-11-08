@@ -1,6 +1,7 @@
 ---
 - name: ENSURE ADDRESS OBJECTS ARE IN DESIRED STATE
   hosts: "dil_uat_fortimanager"
+  collection: fortinet.fortimanager
   connection: local
   gather_facts: false
   tasks:
