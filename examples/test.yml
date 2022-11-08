@@ -3,8 +3,6 @@
   connection: httpapi
   collections:
   - fortinet.fortimanager
-  #username: "{{ username }}"
-  #password: "{{ password }}"
   vars:
      ansible_httpapi_use_ssl: True
      ansible_httpapi_validate_certs: False
