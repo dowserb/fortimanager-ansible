@@ -1,2 +1,2 @@
 collections:
-    - name: fortinet.fortimanager
+    - name: "fortinet.fortimanager"
