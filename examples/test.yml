@@ -1,6 +1,6 @@
 ---
 - hosts: dil_uat_fortimanager
-  connection: httpapi
+  connection: local
   collections:
   - fortinet.fortimanager
   #username: "{{ username }}"
