@@ -6,19 +6,26 @@
   #username: "{{ username }}"
   #password: "{{ password }}"
   vars:
-   ansible_httpapi_use_ssl: yes
-   ansible_httpapi_validate_certs: no
-   ansible_httpapi_port: 443
+     ansible_httpapi_use_ssl: True
+     ansible_httpapi_validate_certs: False
+     ansible_httpapi_port: 443
   tasks:
-   - name: Create a script on FortiManager.
-     fmgr_dvmdb_script:
-        adom: 'uat'
-        state: 'present'
-        dvmdb_script:
-           desc: 'The script create via Ansible'
-           type: 'cli'
-           name: 'fooscript'
-           content: |
-                      config system global
-                         set timezone 04
-                      end
+   - name: Configure IPv4 policies.
+     fmgr_pkg_firewall_policy:
+        bypass_validation: False
+        adom: ansible
+        pkg: ansible # package name
+        state: present
+        pkg_firewall_policy:
+           action: accept #<value in [deny, accept, ipsec, ...]>
+           comments: ansible-comment
+           dstaddr: all
+           dstintf: any
+           name: ansible-test-policy
+           nat: disable
+           policyid: 1
+           schedule: always
+           service: ALL
+           srcaddr: all
+           srcintf: any
+           status: disable
