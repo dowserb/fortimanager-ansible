@@ -13,8 +13,8 @@
    - name: Configure IPv4 policies
      fmgr_pkg_firewall_policy:
         bypass_validation: False
-        adom: root
-        pkg: ansible # package name
+        adom: uat
+        pkg: DEN01WANFW01-FT601E_uat # package name
         state: present
         pkg_firewall_policy:
            action: accept #<value in [deny, accept, ipsec, ...]>
