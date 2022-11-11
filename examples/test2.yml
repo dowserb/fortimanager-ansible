@@ -7,7 +7,7 @@
    - name: Basic deploy of a service
      community.general.terraform:
        project_path: '{{ project_dir }}'
-       state: present
+       state: '{{ state }}'
 #   - name: Define the backend configuration with one or more files at init
 #     community.general.terraform:
 #       project_path: '{{ project_dir }}'
