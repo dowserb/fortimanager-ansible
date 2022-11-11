@@ -6,5 +6,5 @@
   tasks:
    - name: Basic deploy of a service
      community.general.terraform:
-       project_path: "/home/npres.local/bdowd/terraform/fortimanager/"
+       project_path: "/terraform/"
        state: present
