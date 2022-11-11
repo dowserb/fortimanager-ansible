@@ -6,5 +6,5 @@
   tasks:
    - name: Basic deploy of a service
      community.general.terraform:
-       project_path: "/terraform/"
+       project_path: "tmp/terraform/"
        state: present
