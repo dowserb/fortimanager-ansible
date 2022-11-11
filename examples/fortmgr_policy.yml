@@ -2,6 +2,8 @@
 - name: ENSURE POLICIES ARE IN DESIRED STATE
   hosts: dil_uat_fortimanager
   connection: local
+  collections:
+  - fortinet.fortimanager  
   gather_facts: false
 
   tasks:
