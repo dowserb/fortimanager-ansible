@@ -2,13 +2,9 @@
 - hosts: dil_uat_fortimanager
   connection: httpapi
   collections:
-  - 
-  vars:
-     ansible_httpapi_use_ssl: True
-     ansible_httpapi_validate_certs: False
-     ansible_httpapi_port: 443
+  - community.general
   tasks:
    - name: Basic deploy of a service
      community.general.terraform:
-       project_path: '{{ project_dir }}'
+       project_path: "/home/npres.local/bdowd/terraform/fortimanager"
        state: present
