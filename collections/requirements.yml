@@ -1,7 +1,7 @@
 collections:
-    - name: "fortinet.fortimanager"
-      version: 2.1.6
-      source: https://galaxy.ansible.com 
+#    - name: "fortinet.fortimanager"
+#      version: 2.1.6
+#      source: https://galaxy.ansible.com 
     - name: "community.general"
       version: 6.0.0
       source: https://galaxy.ansible.com  
