@@ -20,7 +20,7 @@
      community.general.terraform:
        project_path: "/var/lib/awx/terraform/fortimanager"
        state: '{{ state }}'
-       complex_vars: true
+       complex_vars: false
        variables:
          objname: "test12345"
        force_init: true
