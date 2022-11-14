@@ -11,4 +11,5 @@
        state: '{{ state }}'
        variables:
          objname: terraform
+         ansible_user: '{{ ansible_user }}'
        force_init: true
