@@ -3,7 +3,7 @@
   connection: httpapi
   collections:
   - community.general
-  
+
   tasks:
    - name: Ansible input vars example
      community.general.terraform:
