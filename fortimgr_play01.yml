@@ -16,7 +16,7 @@
 #       backend_config_files:
 #         - /path/to/backend_config_file_1
 #         - /path/to/backend_config_file_2
-   - name: Complex variables example
+   - name: Ansible input vars example
      community.general.terraform:
        project_path: "/var/lib/awx/terraform/fortimanager"
        state: '{{ state }}'
